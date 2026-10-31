@@ -56,6 +56,14 @@ Every fixed $\eta>0$ preserves a constant limiting success bias. The [robustness
 
 For a connected route, start with the [science overview](science/README.md). For machine-assisted reading, use [llms.txt](llms.txt).
 
+## Learn the project
+
+The single educational anchor is **John Watrous, *The Theory of Quantum Information* (2018)**. The [Watrous bridge](learning/WATROUS_BRIDGE.md) selects the relevant parts of the author's available manuscript, translates its notation, and connects general measurement optimization to this particular sampling task. A complete four-element example accounts for every output and separates success probability from signed score.
+
+The [30-milestone map](learning/MILESTONES.md) follows the project's scientific dependencies. Its **14 background/preliminaries milestones** build the states, measurements, optimization tools, and fixed-access model; its **16 narrative/innovation milestones** develop the payoff identity, exact frontier, implementation, classical comparisons, and limitations. Each milestone states a central question, understanding target, dependencies, conceptual connection, and source pointers.
+
+Start with the [learning overview](learning/README.md) and use the bridge alongside the milestones. The scientific account above remains the authoritative proof route.
+
 ## Reproduce the finite checks
 
 With Python 3.10 or newer, run from the repository root:

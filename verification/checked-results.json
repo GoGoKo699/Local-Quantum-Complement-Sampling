@@ -3,7 +3,7 @@
   "numpy_version": "2.3.5",
   "tolerance": 2e-11,
   "source_sha256": {
-    "science/README.md": "b9767f66a7998abc5aa81e72987a062505b0053115049d622db73be397608c4c",
+    "science/README.md": "e0b363d5497a3bee451fb9b31a2260e3ea5ddce479c59fb7fc1c97a01cf7c1b9",
     "science/access-frontier.md": "7614cc8846a11ddc620ef7b73d1619db628b9e56d0138f64cf99a0c021f431bc",
     "science/interpretation.md": "5bc4927c5a7f15b950c6b5a43a61eceeea52b48250d4d6f098021f550de5a88f",
     "science/model.md": "8c8f39ba62869fb413bd00247455a144008a75a900f460ece8d0925cd1b8954e",
