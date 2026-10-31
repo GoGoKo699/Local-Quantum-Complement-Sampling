@@ -2,11 +2,11 @@
 
 Complement sampling asks for one element outside an unknown set using samples drawn from that set. The established global quantum algorithm uses interference across a positive-amplitude subset state. Here the question is which part of that input must remain available to the receiver after compulsory computational-basis measurements.
 
-The exact result is a resource frontier. One retained input qubit gives average success approaching $9/16$; two give success approaching $3/4$; and, for $m\geq2$, the exact failure probability is
+The exact result is a resource frontier. One retained input qubit gives average success approaching $`9/16`$; two give success approaching $`3/4`$; and, for $`m\geq2`$, the exact failure probability is
 
-$$
+```math
 1-p^\star_{n,m}=\frac{2^{n-m}-1}{2^n-1}.
-$$
+```
 
 The source, receiver interface, classical comparison, and ensemble average are all part of this claim.
 
