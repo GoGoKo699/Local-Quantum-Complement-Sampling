@@ -20,7 +20,7 @@ exact frontier
 | Retained input qubits | Optimal score | Optimal success probability |
 | --- | --- | --- |
 | $`m=0`$ | $`1/(N-1)`$ | $`N/[2(N-1)]`$ |
-| $`m=1<n`$ | $`(1+N/8)/(N-1)`$ | $`9N/[16(N-1)]`$ |
+| $`m=1\lt n`$ | $`(1+N/8)/(N-1)`$ | $`9N/[16(N-1)]`$ |
 | $`2\leq m\leq n`$, $`D=2^m`$ | $`(N-2N/D+1)/(N-1)`$ | $`1-(N/D-1)/(N-1)`$ |
 
 The case $`m=n=1`$ has success probability one. A general local instrument,

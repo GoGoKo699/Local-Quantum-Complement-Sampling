@@ -11,13 +11,13 @@ Let $`n\geq2`$, $`N=2^n`$, and $`K=N/2`$. Use the hybrid source $`\omega_S`$ and
 =
 \begin{pmatrix}a&\eta b\\\eta c&d\end{pmatrix},
 \qquad 0\leq\eta\leq1.
-\tag{1}
+\qquad\text{(1)}
 ```
 Thus basis states are unchanged and
 ```math
 \rho_\eta=\mathcal D_\eta(|+\rangle\!\langle+|)
 =\frac{I+\eta X}{2}.
-\tag{2}
+\qquad\text{(2)}
 ```
 The optimization below assumes the parameter $`\eta`$ is known to the decoder. A separate calculation gives the performance when the ideal measurement is left unchanged.
 
@@ -38,7 +38,7 @@ For example, the unconditioned probability that a fixed pair has exactly its $`0
 For a singleton pair, any fixed output outside that pair has expected score zero: the remaining $`N-2`$ positions contain exactly $`K-1=(N-2)/2`$ members of $`S`$. For a doubly occupied pair, an outside output has expected score
 ```math
 1-\frac{2(K-2)}{N-2}=\frac{2}{N-2}.
-\tag{3}
+\qquad\text{(3)}
 ```
 The conditional ensemble is exchangeable on those outside positions, so this statement holds for every such output. It remains valid when an output is selected by an outcome of a qubit measurement: conditional on the pair occupancy, the qubit state has no further dependence on the outside membership pattern.
 
@@ -51,14 +51,14 @@ B_1^{(\eta)}
 =\begin{pmatrix}0&-\eta/4\\-\eta/4&-1/2\end{pmatrix},
 \quad
 B_*^{(\eta)}=0.
-\tag{4}
+\qquad\text{(4)}
 ```
 The table and (3) give the exact identity
 ```math
 A_j^{(N,\eta)}
 =\frac{N B_j^{(\eta)}+\rho_\eta}{N-1},
 \qquad j\in\{0,1,*\}.
-\tag{5}
+\qquad\text{(5)}
 ```
 For instance,
 ```math
@@ -77,7 +77,7 @@ Because the common term in (5) sums to $`\mathrm{tr}\rho_\eta=1`$,
 ```math
 V_{N,\eta}(E)
 =\frac{1+N v_\eta(E)}{N-1}.
-\tag{6}
+\qquad\text{(6)}
 ```
 This shift is independent of the decoder. Consequently optimizing the finite-$`N`$ score is exactly equivalent to optimizing $`v_\eta`$.
 
@@ -91,7 +91,7 @@ V_{N,\eta}^{\rm opt}
 \frac{1+N c_\eta}{N-1},
 \qquad
 c_\eta=\frac{\eta^2}{4(1+\eta)}.
-\tag{7}
+\qquad\text{(7)}
 ```
 An optimal POVM is
 ```math
@@ -111,7 +111,7 @@ E_*^{(\eta)}
 \qquad
 x=\frac{\eta}{2(1+\eta)}.
 \end{aligned}
-\tag{8}
+\qquad\text{(8)}
 ```
 
 **Proof.**
@@ -125,12 +125,12 @@ Positivity and completeness are equivalent to
 ```math
 a,b\geq0,\qquad c^2\leq ab,\qquad
 a+b+2|c|\leq1.
-\tag{9}
+\qquad\text{(9)}
 ```
 The objective is
 ```math
 v_\eta=-a-\eta c.
-\tag{10}
+\qquad\text{(10)}
 ```
 For $`\eta\geq0`$, replacing $`c`$ by $`-|c|`$ cannot reduce it. Put $`t=-c\geq0`$. If $`a=0`$, positivity forces $`t=0`$, giving objective zero. Otherwise $`b\geq t^2/a`$, and (9) implies
 ```math
@@ -142,7 +142,7 @@ Writing $`u=\sqrt a`$, we obtain
 ```math
 v_\eta\leq \eta u-(1+\eta)u^2
 \leq\frac{\eta^2}{4(1+\eta)}.
-\tag{11}
+\qquad\text{(11)}
 ```
 Equality is attained at $`u=x=\eta/[2(1+\eta)]`$, $`b=(1-x)^2`$, and $`t=x(1-x)`$, yielding (8). Inserting (11) into (6) proves (7).
 
@@ -163,14 +163,14 @@ F_\eta
 =\frac{1}{1+\eta}|+\rangle\!\langle+|
  +|-\rangle\!\langle-|
 =(1-x)I-xX.
-\tag{12}
+\qquad\text{(12)}
 ```
 On this outcome, measure in the computational basis and return the opposite bit. The detection outcome produces the fallback. All trials are retained.
 
 The ancilla circuit changes only its controlled rotation angle, from $`2\pi/3`$ to
 ```math
 \theta_\eta=2\arccos\!\left(\frac1{1+\eta}\right).
-\tag{13}
+\qquad\text{(13)}
 ```
 It still needs one initialized ancilla, two CNOTs, four single-qubit rotations, and at most two binary readouts in the explicit decomposition. Degenerate angles can be simplified.
 
@@ -179,7 +179,7 @@ At $`\eta=1`$, $`x=1/4`$, and (8) is the ideal POVM. Equation (7) gives
 V_{N,1}^{\rm opt}=\frac{1+N/8}{N-1},
 \qquad
 p_{N,1}^{\rm opt}=\frac{9N}{16(N-1)}.
-\tag{14}
+\qquad\text{(14)}
 ```
 
 At $`\eta=0`$, $`x=0`$, $`E_0=|1\rangle\langle1|`$, $`E_1=|0\rangle\langle0|`$, and $`E_*=0`$. The decoder simply measures the remaining classical bit and outputs its partner. It achieves
@@ -187,14 +187,14 @@ At $`\eta=0`$, $`x=0`$, $`E_0=|1\rangle\langle1|`$, $`E_1=|0\rangle\langle0|`$, 
 V_{N,0}^{\rm opt}=\frac1{N-1},
 \qquad
 p_{N,0}^{\rm opt}=\frac{N}{2(N-1)},
-\tag{15}
+\qquad\text{(15)}
 ```
 exactly the optimal success with one ordinary classical sample. The finite positive score in (15) is the exclusion of the already observed sample, not residual quantum coherence.
 
 For each fixed $`\eta>0`$, the limiting success probability is
 ```math
 \frac12+\frac{\eta^2}{8(1+\eta)}>\frac12.
-\tag{16}
+\qquad\text{(16)}
 ```
 Thus a fixed positive amount of coherence on the sole retained input qubit preserves a constant success bias. This statement uses the measurement adapted to that $`\eta`$.
 
@@ -207,7 +207,7 @@ V_{N,\eta}^{\rm fixed}
 \qquad
 p_{N,\eta}^{\rm fixed}
 =\frac{N(15+3\eta)}{32(N-1)}.
-\tag{17}
+\qquad\text{(17)}
 ```
 The fixed ideal measurement has a positive limiting bias precisely when $`\eta>1/3`$. At $`\eta=1`$, (17) agrees with (14). At $`\eta=0`$, it is inferior to the classical partner rule, as expected for an untuned measurement.
 
@@ -219,13 +219,13 @@ For a fixed $`\eta`$, the optimal success in (7) is
 ```math
 p_{N,\eta}^{\rm opt}
 =\frac{N(1+c_\eta)}{2(N-1)}.
-\tag{18}
+\qquad\text{(18)}
 ```
 Combining (18) with the ordinary-sample upper bound $`N/[2(N-q)]`$ gives the necessary count
 ```math
 q\geq
 \left\lceil\frac{Nc_\eta+1}{1+c_\eta}\right\rceil.
-\tag{19}
+\qquad\text{(19)}
 ```
 For $`\eta=1`$, this is $`\lceil(N+8)/9\rceil`$. For $`\eta=0`$, it is one. Every fixed $`\eta>0`$ yields a linear-in-$`N`$ necessary classical sample count.
 

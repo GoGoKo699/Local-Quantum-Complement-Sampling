@@ -31,7 +31,7 @@ Computational-basis measurement of the prefix of $`|S\rangle`$ produces the clas
 \omega_S
 =\frac1K\sum_z |z\rangle\!\langle z|_C
   \otimes |v_z\rangle\!\langle v_z|_Q.
-\tag{1}
+\qquad\text{(1)}
 ```
 This expression is normalized because $`\sum_z\langle v_z|v_z\rangle=K`$.
 
@@ -64,7 +64,7 @@ The comparison also fixes the source encoding. If the source is instead allowed 
 Fully dephasing the qubit in (1) gives
 ```math
 \frac1K\sum_{x\in S}|x\rangle\!\langle x|.
-\tag{2}
+\qquad\text{(2)}
 ```
 Thus the ordinary classical input is exactly the dephased version of the hybrid input. The comparison is between these two source outputs, with the source's private membership access excluded from both players' allowed operations.
 
@@ -77,7 +77,7 @@ E_0=\frac1{16}
 E_1=\frac1{16}
 \begin{pmatrix}9&-3\\-3&1\end{pmatrix},\quad
 E_*=\frac34|+\rangle\!\langle+|.
-\tag{3}
+\qquad\text{(3)}
 ```
 Each effect is positive and their sum is $`I`$. Outcomes $`0`$ and $`1`$ produce $`z0`$ and $`z1`$. Outcome $`*`$ produces a fixed string $`f(z)`$ outside $`B_z`$. For example, flip the first bit of $`z`$ and append $`0`$. This is why the construction assumes $`n\geq2`$.
 
@@ -91,7 +91,7 @@ K_*=\frac{\sqrt3}{2}|+\rangle\!\langle+|,
 \qquad
 F=\frac12|+\rangle\!\langle+|+|-\rangle\!\langle-|
  =\begin{pmatrix}3/4&-1/4\\-1/4&3/4\end{pmatrix}.
-\tag{4}
+\qquad\text{(4)}
 ```
 The detection outcome produces the fallback $`f(z)`$. On the other outcome, measure $`Q`$ in the computational basis and output the opposite bit. Its effects are
 ```math
@@ -124,7 +124,7 @@ W=\frac14
 -3&1\\
 \sqrt6&\sqrt6
 \end{pmatrix},\qquad W^\dagger W=I.
-\tag{5}
+\qquad\text{(5)}
 ```
 Computational-basis measurement of the three-dimensional output realizes (3). Embedding the three output labels into $`|00\rangle,|01\rangle,|10\rangle`$ uses the same single ancillary qubit. If both qubits are measured in a complete four-outcome implementation, the unused ideal outcome has probability zero and can be assigned the fallback rather than discarded.
 
@@ -136,7 +136,7 @@ V_1=\frac{1+N/8}{N-1},
 \qquad
 p_1=\frac{1+V_1}{2}
 =\frac{9N}{16(N-1)}.
-\tag{6}
+\qquad\text{(6)}
 ```
 The finite-$`N`$ calculation and optimality within the hybrid input model are proved in [robustness.md](robustness.md), including the noiseless endpoint. As $`N\to\infty`$, $`p_1\to9/16`$. This is a constant positive success bias; it is not a claim of $`2/3`$ success for the one-qubit decoder.
 
@@ -144,19 +144,19 @@ For completeness, the classical comparison can be obtained directly from the pos
 ```math
 \Pr(y\notin S\mid D)=\frac{N-K}{N-d}
 =\frac{N}{2(N-d)}.
-\tag{7}
+\qquad\text{(7)}
 ```
 No computation or output randomization can exceed this conditional probability.
 
-In particular, a player using at most $`q<K`$ ordinary samples satisfies
+In particular, a player using at most $`q\lt K`$ ordinary samples satisfies
 ```math
 p_{\rm cl}\leq\frac{N}{2(N-q)}.
-\tag{8}
+\qquad\text{(8)}
 ```
 Repeated samples can only weaken this upper bound. Matching the quantum probability (6) therefore requires
 ```math
 q\geq\left\lceil\frac{N+8}{9}\right\rceil.
-\tag{9}
+\qquad\text{(9)}
 ```
 If $`q\geq K`$, (9) is already automatic for $`N\geq4`$. A target probability merely $`9/16`$, without the finite-size improvement in (6), still requires $`q\geq\lceil N/9\rceil`$. These are necessary ordinary-sample counts, not assertions that sampling with replacement attains equality.
 
@@ -177,7 +177,7 @@ with an efficiently evaluable inverse and a uniformly chosen secret key $`k`$. A
 Define
 ```math
 S_k=P_k(\{0\}\times\{0,1\}^{n-1}).
-\tag{10}
+\qquad\text{(10)}
 ```
 These sets are balanced. The trusted source samples $`r\in\{0,1\}^{n-1}`$, sets $`x=P_k(0r)`$, and tests the partner $`x'`$ by evaluating the first bit of $`P_k^{-1}(x')`$. Proposition 1 then prepares the exact hybrid source for $`S_k`$.
 
@@ -215,7 +215,7 @@ Under the same assumption, the fixed decoder has
 ```math
 \Pr[y\notin S_k]
 =\frac{9N}{16(N-1)}+\mathrm{negl}(n),
-\tag{11}
+\qquad\text{(11)}
 ```
 where the signed error has negligible absolute value.
 
