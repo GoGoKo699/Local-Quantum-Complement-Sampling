@@ -5,6 +5,7 @@ An exact average-case complement-sampling frontier after a fixed computational-b
 ## Routes
 
 - Scientific story and result table: README.md, then science/README.md.
+- Self-directed study: learning/README.md, the exactly 30 project-defined targets in learning/MILESTONES.md, and the single-anchor notation, reading, and worked-example bridge in learning/WATROUS_BRIDGE.md.
 - Definitions, allowed access, output criterion, and ensemble distinctions: science/model.md.
 - Common balanced/BV one-copy payoff operator: science/payoff-identity.md.
 - Exact theorem, small endpoints, optimal POVMs, and primal-dual certificates: science/access-frontier.md.
@@ -13,6 +14,12 @@ An exact average-case complement-sampling frontier after a fixed computational-b
 - Physical meaning, counterexamples, and resource boundaries: science/interpretation.md.
 - Established ingredients and precise neighboring results: references/related-work.md and references/references.bib.
 - Reproduction commands and verification limits: verification/README.md and verification/check_science.py.
+
+## Educational source
+
+The sole educational anchor is John Watrous, The Theory of Quantum Information (2018), linked through https://cs.uwaterloo.ca/~watrous/TQI/. The bridge selects portions of Chapters 1–3; it does not require the whole book. M01–M14 build background and the operational model, and M15–M30 connect the project's results. Read the relevant science file for authoritative claims and proofs. Primary research attribution remains in references/related-work.md and references/references.bib.
+
+Watrous Section 3.1.2 already supplies general Hermitian-payoff measurement optimization. The project-specific steps are the complement-sampling payoff calculation, compulsory measured-prefix reduction, exact matching certificates, implementation and resource comparisons. The bridge's N=4, m=1 example has average success 3/4; the one-qubit asymptotic success is 9/16.
 
 ## Preserve these distinctions
 

@@ -3,13 +3,13 @@
   "numpy_version": "2.3.5",
   "tolerance": 2e-11,
   "source_sha256": {
-    "science/README.md": "b9767f66a7998abc5aa81e72987a062505b0053115049d622db73be397608c4c",
-    "science/access-frontier.md": "7614cc8846a11ddc620ef7b73d1619db628b9e56d0138f64cf99a0c021f431bc",
-    "science/interpretation.md": "5bc4927c5a7f15b950c6b5a43a61eceeea52b48250d4d6f098021f550de5a88f",
-    "science/model.md": "8c8f39ba62869fb413bd00247455a144008a75a900f460ece8d0925cd1b8954e",
-    "science/payoff-identity.md": "4ec28fee153e443d827d9b370799a11849135067f54a40a3bcc3a017e2561141",
-    "science/robustness.md": "8f1b465650c402f1a2533a9a52ea97ce1840d0d158b2690030b60b585dcbedc1",
-    "science/source-and-implementation.md": "451fb389309064cc18d45437be4ceb2d9ad64d2c11b44606bd6a099a67b29b35"
+    "science/README.md": "01dd166e3d88cdd25e5d2f6ae195d173f3330e06c086be72283aecd2c3b4ed9f",
+    "science/access-frontier.md": "6dafd590fe677bb46a251d5fd69d11e962a8e295cff80be07f1def747646b2eb",
+    "science/interpretation.md": "f10d6a1718370c2d19b0ec5b44e9516b83e40eb9965796037e438a4c8e88b560",
+    "science/model.md": "f58c37cb1b32ae3a5a9562f0100c6a84b604ae8950fb23679ee593bd4c1d4e82",
+    "science/payoff-identity.md": "ccc5cb85b3aa417f066d299a5603159384df8a881c59f79c030a591f103b5c4d",
+    "science/robustness.md": "f7f045164169d82f9f3815954f43298a28aa3bcee28b0dbdfddffa12cb82900c",
+    "science/source-and-implementation.md": "4aa01f6a81fb13c245c0981b6a481a73c7d23b7a3bf545c9fb86dd24df0b0164"
   },
   "frontier_exhaustive": [
     {
