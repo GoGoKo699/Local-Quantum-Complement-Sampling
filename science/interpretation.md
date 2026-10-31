@@ -70,7 +70,7 @@ It does not equate their multiple-copy learning problems. Uniform balanced sets 
 
 ## Coherence, source costs, and certification
 
-For known residual coherence $\eta>0$, the optimal measurement can be retuned to preserve a limiting success bias $\eta^2/[8(1+\eta)]$. This is an exact statement for the specified dephasing channel. It does not cover arbitrary noise, unknown preparation labels, or arbitrary correlations with a receiver's ancillas. The ideal fixed measurement has its own threshold, derived separately in [the robustness account](robustness.md).
+For known residual coherence $\eta>0$, the optimal measurement can be retuned to preserve a limiting success bias $\eta^2/[8(1+\eta)]$. This is an exact statement for the specified dephasing channel. It does not cover arbitrary noise, unmodeled preparation errors, or arbitrary correlations with a receiver's ancillas. The preparation label remains private throughout the protocol. The ideal fixed measurement has its own threshold, derived separately in [the robustness account](robustness.md).
 
 A generic random subset remains expensive to describe and prepare. The direct source construction replaces a large coherent preparation with explicitly charged classical sampling and membership resources. The keyed construction is efficient under a classical strong-PRP assumption, and its lower bound concerns efficient classical players. Neither construction turns an input-access theorem into an unconditional end-to-end runtime advantage for a classically specified task.
 
