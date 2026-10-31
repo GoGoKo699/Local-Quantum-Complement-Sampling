@@ -1,0 +1,434 @@
+{
+  "status": "pass",
+  "numpy_version": "2.3.5",
+  "tolerance": 2e-11,
+  "source_sha256": {
+    "science/README.md": "b9767f66a7998abc5aa81e72987a062505b0053115049d622db73be397608c4c",
+    "science/access-frontier.md": "7614cc8846a11ddc620ef7b73d1619db628b9e56d0138f64cf99a0c021f431bc",
+    "science/interpretation.md": "6d18ae0e67bcbbcfcefa7905acbe7c86768999f5799462e9ee951d817fb2fa95",
+    "science/model.md": "8c8f39ba62869fb413bd00247455a144008a75a900f460ece8d0925cd1b8954e",
+    "science/payoff-identity.md": "4ec28fee153e443d827d9b370799a11849135067f54a40a3bcc3a017e2561141",
+    "science/robustness.md": "8f1b465650c402f1a2533a9a52ea97ce1840d0d158b2690030b60b585dcbedc1",
+    "science/source-and-implementation.md": "451fb389309064cc18d45437be4ceb2d9ad64d2c11b44606bd6a099a67b29b35"
+  },
+  "frontier_exhaustive": [
+    {
+      "n": 1,
+      "m": 0,
+      "subsets": 2,
+      "average_score": 1.0,
+      "expected_score": 1.0,
+      "average_success": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "n": 1,
+      "m": 1,
+      "subsets": 2,
+      "average_score": 1.0,
+      "expected_score": 1.0,
+      "average_success": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "n": 2,
+      "m": 0,
+      "subsets": 6,
+      "average_score": 0.33333333333333326,
+      "expected_score": 0.3333333333333333,
+      "average_success": 0.6666666666666666,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "n": 2,
+      "m": 1,
+      "subsets": 6,
+      "average_score": 0.49999999999999983,
+      "expected_score": 0.5,
+      "average_success": 0.7499999999999999,
+      "absolute_error": 1.6653345369377348e-16
+    },
+    {
+      "n": 2,
+      "m": 2,
+      "subsets": 6,
+      "average_score": 0.9999999999999999,
+      "expected_score": 1.0,
+      "average_success": 1.0,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "n": 3,
+      "m": 0,
+      "subsets": 70,
+      "average_score": 0.14285714285714285,
+      "expected_score": 0.14285714285714285,
+      "average_success": 0.5714285714285714,
+      "absolute_error": 0.0
+    },
+    {
+      "n": 3,
+      "m": 1,
+      "subsets": 70,
+      "average_score": 0.2857142857142857,
+      "expected_score": 0.2857142857142857,
+      "average_success": 0.6428571428571428,
+      "absolute_error": 0.0
+    },
+    {
+      "n": 3,
+      "m": 2,
+      "subsets": 70,
+      "average_score": 0.7142857142857143,
+      "expected_score": 0.7142857142857143,
+      "average_success": 0.8571428571428572,
+      "absolute_error": 0.0
+    },
+    {
+      "n": 3,
+      "m": 3,
+      "subsets": 70,
+      "average_score": 1.0,
+      "expected_score": 1.0,
+      "average_success": 1.0,
+      "absolute_error": 0.0
+    },
+    {
+      "n": 4,
+      "m": 0,
+      "subsets": 12870,
+      "average_score": 0.06666666666666664,
+      "expected_score": 0.06666666666666667,
+      "average_success": 0.5333333333333333,
+      "absolute_error": 2.7755575615628914e-17
+    },
+    {
+      "n": 4,
+      "m": 1,
+      "subsets": 12870,
+      "average_score": 0.19999999999999996,
+      "expected_score": 0.2,
+      "average_success": 0.6,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "n": 4,
+      "m": 2,
+      "subsets": 12870,
+      "average_score": 0.5999999999999999,
+      "expected_score": 0.6,
+      "average_success": 0.7999999999999999,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "n": 4,
+      "m": 3,
+      "subsets": 12870,
+      "average_score": 0.8666666666666665,
+      "expected_score": 0.8666666666666667,
+      "average_success": 0.9333333333333332,
+      "absolute_error": 2.220446049250313e-16
+    },
+    {
+      "n": 4,
+      "m": 4,
+      "subsets": 12870,
+      "average_score": 1.0,
+      "expected_score": 1.0,
+      "average_success": 1.0,
+      "absolute_error": 0.0
+    }
+  ],
+  "dephasing_exhaustive": [
+    {
+      "n": 2,
+      "eta": 0.0,
+      "retuned": true,
+      "actual_score": 0.3333333333333332,
+      "expected_score": 0.3333333333333333,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "n": 2,
+      "eta": 0.0,
+      "retuned": false,
+      "actual_score": 0.24999999999999992,
+      "expected_score": 0.25,
+      "absolute_error": 8.326672684688674e-17
+    },
+    {
+      "n": 2,
+      "eta": 0.2,
+      "retuned": true,
+      "actual_score": 0.3444444444444444,
+      "expected_score": 0.3444444444444445,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "n": 2,
+      "eta": 0.2,
+      "retuned": false,
+      "actual_score": 0.2999999999999999,
+      "expected_score": 0.3,
+      "absolute_error": 1.1102230246251565e-16
+    },
+    {
+      "n": 2,
+      "eta": 0.5,
+      "retuned": true,
+      "actual_score": 0.38888888888888884,
+      "expected_score": 0.3888888888888889,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "n": 2,
+      "eta": 0.5,
+      "retuned": false,
+      "actual_score": 0.37499999999999983,
+      "expected_score": 0.375,
+      "absolute_error": 1.6653345369377348e-16
+    },
+    {
+      "n": 2,
+      "eta": 1.0,
+      "retuned": true,
+      "actual_score": 0.49999999999999983,
+      "expected_score": 0.5,
+      "absolute_error": 1.6653345369377348e-16
+    },
+    {
+      "n": 2,
+      "eta": 1.0,
+      "retuned": false,
+      "actual_score": 0.49999999999999983,
+      "expected_score": 0.5,
+      "absolute_error": 1.6653345369377348e-16
+    },
+    {
+      "n": 3,
+      "eta": 0.0,
+      "retuned": true,
+      "actual_score": 0.14285714285714285,
+      "expected_score": 0.14285714285714285,
+      "absolute_error": 0.0
+    },
+    {
+      "n": 3,
+      "eta": 0.0,
+      "retuned": false,
+      "actual_score": 0.07142857142857142,
+      "expected_score": 0.07142857142857142,
+      "absolute_error": 0.0
+    },
+    {
+      "n": 3,
+      "eta": 0.2,
+      "retuned": true,
+      "actual_score": 0.1523809523809523,
+      "expected_score": 0.15238095238095237,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "n": 3,
+      "eta": 0.2,
+      "retuned": false,
+      "actual_score": 0.11428571428571428,
+      "expected_score": 0.1142857142857143,
+      "absolute_error": 1.3877787807814457e-17
+    },
+    {
+      "n": 3,
+      "eta": 0.5,
+      "retuned": true,
+      "actual_score": 0.19047619047619052,
+      "expected_score": 0.19047619047619047,
+      "absolute_error": 5.551115123125783e-17
+    },
+    {
+      "n": 3,
+      "eta": 0.5,
+      "retuned": false,
+      "actual_score": 0.17857142857142858,
+      "expected_score": 0.17857142857142858,
+      "absolute_error": 0.0
+    },
+    {
+      "n": 3,
+      "eta": 1.0,
+      "retuned": true,
+      "actual_score": 0.2857142857142857,
+      "expected_score": 0.2857142857142857,
+      "absolute_error": 0.0
+    },
+    {
+      "n": 3,
+      "eta": 1.0,
+      "retuned": false,
+      "actual_score": 0.2857142857142857,
+      "expected_score": 0.2857142857142857,
+      "absolute_error": 0.0
+    }
+  ],
+  "payoff_identities": [
+    {
+      "n": 1,
+      "max_entry_errors": {
+        "balanced": 1.1102230246251565e-16,
+        "BV": 1.1102230246251565e-16
+      }
+    },
+    {
+      "n": 2,
+      "max_entry_errors": {
+        "balanced": 8.326672684688674e-17,
+        "BV": 8.326672684688674e-17
+      }
+    },
+    {
+      "n": 3,
+      "max_entry_errors": {
+        "balanced": 3.469446951953614e-18,
+        "BV": 3.469446951953614e-18
+      }
+    }
+  ],
+  "primal_dual_certificates": [
+    {
+      "D": 1,
+      "cost": 0.0,
+      "minimum_dual_slack": -0.0,
+      "minimum_primal_slack": 0.0
+    },
+    {
+      "D": 2,
+      "cost": -0.25,
+      "minimum_dual_slack": 4.163336342344337e-17,
+      "minimum_primal_slack": 0.0
+    },
+    {
+      "D": 4,
+      "cost": -2.0,
+      "minimum_dual_slack": -2.3014901616436045e-16,
+      "minimum_primal_slack": -1.060682204415944e-16
+    },
+    {
+      "D": 8,
+      "cost": -6.0,
+      "minimum_dual_slack": -7.216449660063518e-16,
+      "minimum_primal_slack": -2.569277261875837e-16
+    },
+    {
+      "D": 16,
+      "cost": -14.0,
+      "minimum_dual_slack": -3.741581697247476e-16,
+      "minimum_primal_slack": -1.3304924226520805e-16
+    },
+    {
+      "D": 32,
+      "cost": -30.0,
+      "minimum_dual_slack": -6.664287516473279e-15,
+      "minimum_primal_slack": -5.384714642994795e-17
+    }
+  ],
+  "hybrid_source_identity": [
+    {
+      "n": 1,
+      "subsets": 2,
+      "max_entry_error": 0.0
+    },
+    {
+      "n": 2,
+      "subsets": 6,
+      "max_entry_error": 0.0
+    },
+    {
+      "n": 3,
+      "subsets": 70,
+      "max_entry_error": 0.0
+    }
+  ],
+  "measurement_implementation": {
+    "eta_values": [
+      0,
+      0.2,
+      0.5,
+      1
+    ],
+    "max_entry_error": 2.220446049250313e-16,
+    "source_state_outcome_probabilities": [
+      [
+        0.0625,
+        0.5625,
+        0.375
+      ],
+      [
+        0.5625,
+        0.0625,
+        0.375
+      ],
+      [
+        0.12499999999999999,
+        0.125,
+        0.7499999999999999
+      ]
+    ]
+  },
+  "classical_posterior": {
+    "N": 8,
+    "cases": [
+      {
+        "distinct_samples": 1,
+        "compatible_subsets": 35,
+        "success_on_each_unseen_string": 0.5714285714285714
+      },
+      {
+        "distinct_samples": 2,
+        "compatible_subsets": 15,
+        "success_on_each_unseen_string": 0.6666666666666667
+      },
+      {
+        "distinct_samples": 3,
+        "compatible_subsets": 5,
+        "success_on_each_unseen_string": 0.8
+      },
+      {
+        "distinct_samples": 4,
+        "compatible_subsets": 1,
+        "success_on_each_unseen_string": 1.0
+      }
+    ]
+  },
+  "changed_classical_source": [
+    {
+      "n": 2,
+      "subsets": 6,
+      "average_score": 0.6666666666666666,
+      "average_success": 0.8333333333333333,
+      "expected_success": 0.8333333333333334
+    },
+    {
+      "n": 3,
+      "subsets": 70,
+      "average_score": 0.42857142857142855,
+      "average_success": 0.7142857142857143,
+      "expected_success": 0.7142857142857143
+    }
+  ],
+  "worst_case_counterexamples": {
+    "n": 3,
+    "one_qubit_set": [
+      0,
+      1,
+      4,
+      5
+    ],
+    "block_set": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "success": 0
+  },
+  "limits": "Finite checks do not prove the general theorem, novelty, or strong-PRP security."
+}

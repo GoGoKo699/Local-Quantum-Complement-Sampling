@@ -1,0 +1,23 @@
+# Local Quantum Complement Sampling
+
+An exact average-case complement-sampling frontier after a fixed computational-basis measurement leaves m input qubits. The authoritative scientific model permits arbitrary receiver instruments and fresh ancillas after the input interface; it counts retained input qubits, not unrestricted coherent memory.
+
+## Routes
+
+- Scientific story and result table: README.md, then science/README.md.
+- Definitions, allowed access, output criterion, and ensemble distinctions: science/model.md.
+- Common balanced/BV one-copy payoff operator: science/payoff-identity.md.
+- Exact theorem, small endpoints, optimal POVMs, and primal-dual certificates: science/access-frontier.md.
+- Direct hybrid source, explicit measurement circuit, classical sample comparison, and conditional strong-PRP construction: science/source-and-implementation.md.
+- Known dephasing parameter, optimal retuning, and distinct fixed-measurement performance: science/robustness.md.
+- Physical meaning, counterexamples, and resource boundaries: science/interpretation.md.
+- Established ingredients and precise neighboring results: references/related-work.md and references/references.bib.
+- Reproduction commands and verification limits: verification/README.md and verification/check_science.py.
+
+## Preserve these distinctions
+
+The main ensemble is a uniform random balanced subset of N=2^n labels. The result is an average-case optimum, not a worst-case local sampler. With one retained input qubit and n>=2, exact success is 9N/[16(N-1)], tending to 9/16. For m>=2, failure is (N/2^m-1)/(N-1). The n=1 endpoints are perfect by flipping the observed bit.
+
+The classical comparison receives ordinary samples, equivalently the fully dephased promised input. Source membership information and preparation labels remain private; arbitrary classical source encodings define a different task. Generic source preparation, ancillas, classical records, output, and precision costs are explicit.
+
+The unrestricted diffuser and classical sample lower bounds are inherited. The balanced and BV ensembles agree for every one-copy decoder but differ in multi-copy classical complexity. The efficient keyed-source result assumes classical strong-PRP security and gives computational hardness, not an information-theoretic lower bound for all succinct sets. Optimal dephasing performance uses a retuned measurement. No source-fidelity rigidity for the local receiver is established.
